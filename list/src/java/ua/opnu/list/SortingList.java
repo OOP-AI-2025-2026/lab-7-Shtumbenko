@@ -69,7 +69,7 @@ public class SortingList extends Application {
         sortByNameButton.setOnAction(event -> {
             Comparator<Student> nameComparator = Comparator.comparing(Student::getName);
             students.sort(orderName ? nameComparator : nameComparator.reversed());
-            orderName = !orderName; // [cite: 89]
+            orderName = !orderName;
         });
 
         sortByLastNameButton.setOnAction(event -> {
